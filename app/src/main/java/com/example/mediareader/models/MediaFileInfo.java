@@ -2,8 +2,8 @@ package com.example.mediareader.models;
 
 /**
  * Created by David on 14/01/2017.
+ * Model containing media file info
  */
-
 public class MediaFileInfo {
 
     private String filePath;

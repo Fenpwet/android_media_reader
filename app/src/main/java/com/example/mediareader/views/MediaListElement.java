@@ -9,8 +9,8 @@ import com.example.mediareader.R;
 
 /**
  * Created by David on 14/01/2017.
+ * View of a media list element
  */
-
 public class MediaListElement extends LinearLayout {
 
     private ViewHolder viewHolder;
@@ -50,9 +50,6 @@ public class MediaListElement extends LinearLayout {
             return title;
         }
 
-        public TextView getText1() {
-            return text1;
-        }
     }
 
 }
