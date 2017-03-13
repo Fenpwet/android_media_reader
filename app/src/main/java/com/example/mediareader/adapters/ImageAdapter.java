@@ -20,9 +20,9 @@ public class ImageAdapter extends BaseAdapter {
     private Context context;
     private List<MediaFileInfo> mediaFileInfos;
 
-    public ImageAdapter(Context context, List<MediaFileInfo> data) {
+    public ImageAdapter(Context context, List<MediaFileInfo> mediaFileInfos) {
         this.context = context;
-        this.mediaFileInfos = data;
+        this.mediaFileInfos = mediaFileInfos;
     }
 
     @Override
@@ -61,5 +61,14 @@ public class ImageAdapter extends BaseAdapter {
                 .into(mediaListElement.getViewHolder().getThumbnail());
 
         return mediaListElement;
+    }
+
+    /**
+     *
+     * @param index
+     */
+    public void removeView(int index) {
+        mediaFileInfos.remove(index);
+        notifyDataSetChanged();
     }
 }

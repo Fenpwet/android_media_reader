@@ -1,3 +1,20 @@
 <resources>
+    <!-- General -->
     <string name="app_name">MediaReader</string>
+
+    <!-- Contextual Menu Options -->
+    <string name="context_open">Open</string>
+    <string name="context_delete">Delete</string>
+    <string name="context_properties">Properties</string>
+
+    <!-- Delete Confirm Dialog -->
+    <string name="delete_dialog_title">Confirm Delete</string>
+    <string name="delete_dialog_text">Are you sure you want to delete %1$s?</string>
+    <string name="delete_dialog_yes">Delete</string>
+    <string name="delete_dialog_no">Cancel</string>
+
+    <!-- Delete Toast -->
+    <string name="delete_toast_ok">Deleted %1$s</string>
+    <string name="delete_toast_error">Error, could not delete %1$s</string>
+
 </resources>

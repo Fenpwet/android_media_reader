@@ -15,19 +15,6 @@ public class MediaListElement extends LinearLayout {
 
     private ViewHolder viewHolder;
 
-    public MediaListElement(Context context) {
-        super(context);
-        init();
-    }
-
-    public ViewHolder getViewHolder() {
-        return viewHolder;
-    }
-
-    public void setViewHolder(ViewHolder viewHolder) {
-        this.viewHolder = viewHolder;
-    }
-
     private void init() {
         inflate(getContext(), R.layout.list_element, this);
         viewHolder = new ViewHolder();
@@ -35,6 +22,15 @@ public class MediaListElement extends LinearLayout {
         viewHolder.title = (TextView) findViewById(R.id.list_element_title);
         viewHolder.text1 = (TextView) findViewById(R.id.list_element_text1);
         this.setTag(viewHolder);
+    }
+
+    public MediaListElement(Context context) {
+        super(context);
+        init();
+    }
+
+    public ViewHolder getViewHolder() {
+        return viewHolder;
     }
 
     public static class ViewHolder {
@@ -49,7 +45,6 @@ public class MediaListElement extends LinearLayout {
         public TextView getTitle() {
             return title;
         }
-
     }
 
 }
